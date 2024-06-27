@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Esse video esta hospedado no meu proprio servidor.</p>
+
+    <p>Primeiro modo:</p>
+    <video src="./exercicios/ex012/midia/meu-video.mp4" width="500" controls></video>
+    <video src="./exercicios/ex012/midia/meu-video.m4v" width="500" controls></video>
+    <video src="./exercicios/ex012/midia/meu-video.ogv" width="500" controls></video>
+    <video src="./exercicios/ex012/midia/meu-video.webm" width="500" controls></video>
+
+    <p>Segundo modo:</p>
+    <video width="500" poster="./exercicios/ex012/img/limoes-capa.png" controls>
+        <source src="exercicios/ex012/midia/meu-video.mp4" type="video/mp4">
+        <source src="exercicios/ex012/midia/meu-video.m4v" type="video/mp4">
+        <source src="exercicios/ex012/midia/meu-video.webm" type="video/webm">
+        <source src="exercicios/ex012/midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador nao tem compatibilidade com reproducao de videos.</p>
+    </video>
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ccWpz36WPm4?si=bs540nellFr-BiH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/334051941?h=b020a02016" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

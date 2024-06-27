@@ -1,0 +1,35 @@
+body {
+    background-color: #5CECAB;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: #42A87A;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #276449;
+    color: white;
+}
+
+h2 {
+    color: #28CA69;
+}
+
+.basico {
+    color: #28CA69;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+    background-color: rgb(120, 127, 29);
+}

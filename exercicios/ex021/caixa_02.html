@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: darkgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;            
+        }
+        nav {
+            background-color: rgb(148, 145, 145);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;  
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(126, 125, 125);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Politica</a>
+            <a href="#">Economia</a>
+            <a href="#">Blogs e colunas</a>
+            <a href="#">Esporte</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Tecnologia</h2>
+            <p>
+                Novas tecnologias que estão gerando grandes impactos no mundo
+                Mas afinal, quais são as novas tecnologias que têm gerado grandes impactos no mundo? Alguns dos tipos de tecnologias atuais que se pode citar são:
+
+                Realidade virtual e aumentada;
+                Inteligência artificial;
+                Drones;
+                Internet das Coisas (IoT);
+                Big Data;
+                Impressão 3D;
+                Robótica.
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                    <h2>Noticias sobre a psicologia</h2>
+                    <p>“Se quiseres poder suportar a vida, fica pronto para aceitar a morte”.
+                    “O outro desempenha sempre na vida de um indivíduo o papel de um modelo, de um objeto, de um associado ou de um adversário”.
+                    “Não permito que nenhuma reflexão filosófica me tire a alegria das coisas simples da vida”.
+                    Em 1923, no livro "O Ego e o Id", Freud expôs uma divisão da mente humana em três partes: 1) o ego que se identifica à nossa consciência; 2) o superego, que seria a nossa consciência moral, ou seja, os princípios sociais e as proibições que nos são inculcadas nos primeiros anos de vida e que nos acompanham de forma inconsciente a vida inteira; 3) o id, isto é, os impulsos múltiplos da libido, dirigidos sempre para o prazer.</p>
+                <aside>
+                    <p>Artigo escrito por Freud</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Milton Gomes</p>
+    </footer>
+</body>
+</html>

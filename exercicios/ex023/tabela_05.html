@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de tabelas</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 15px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        col.c_nome {
+            background-color: aquamarine;
+        } 
+        /*col.c_grupo {
+            background-color: yellowgreen;
+        }*/
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercicios de tabelas</h1>
+
+    <table>
+        <!--col.c_group:
+        
+        <colgroup> colgroup permite formatar as colunas por inteiro
+            <col class="c_nome">
+            <col class="c_grupo" span="2"> c_grupo configura para o numero de colunas sugeridas no span
+            <col class="c_prof">
+        </colgroup>-->
+
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col" >Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>ana Maria</td>
+            <td>f</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>claudio</td>
+            <td>m</td>
+            <td>28</td>
+            <td>programador</td>
+        </tr>
+        <tr>
+            <td>gustavo</td>
+            <td>m</td>
+            <td>42</td>
+            <td>professor</td>
+        </tr>
+        <tr>
+            <td>helio</td>
+            <td>m</td>
+            <td>19</td>
+            <td>vendedor</td>
+        </tr>
+        <tr>
+            <td>maria</td>
+            <td>f</td>
+            <td>39</td>
+            <td>medico</td>
+        </tr>
+        <tr>
+            <td>otavio</td>
+            <td>m</td>
+            <td>22</td>
+            <td>nutricionista</td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
