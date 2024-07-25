@@ -1,0 +1,36 @@
+/* estilo media query para telas: */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /*retira as bolinhas do inicio*/
+    background-color: gray;
+}
+
+nav li {
+    display: inline-block; /*alinha os itens*/
+    background-color: rgb(59, 58, 58);
+    color: white;
+    padding: 10px; /*para afastar um item do outro*/
+}
+
+article {
+    display: block; /*deixa o article centralizado*/
+    margin: auto; /*centraliza nas margens*/
+}
