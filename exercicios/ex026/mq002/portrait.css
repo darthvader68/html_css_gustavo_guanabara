@@ -1,1 +1,6 @@
 /* para smartphone modo portrait (em pe) */
+
+body {
+    background-image: url('img/cev-portrait.jpg');
+    background-position: center bottom;
+}
