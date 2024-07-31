@@ -1,5 +1,85 @@
 /* todas as demais midias */
 
-@ media print  {
+/* typical device breakpoint:
+-----------------------------
+320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets
+769px — 1024px: telas pequenas, laptops
+1025px — 1200px: desktops, telas grandes
+1201px e acima: telas muito grandes, TVs
+
+*/
+/* impressao */
+@media print  {
+    * {
+        font-family: 'Courier New', Courier, monospace;        
+    }
+
+    body {
+        background-image: url('img/back-print.jpg'); /*desnecessario*/
+    }
+
+    main {
+        width: 90%;
+        border: 2px solid black;
+    }
+
+    main::after { /*se quiser incluir mensagens na impressao*/
+        content: "Essa impressao foi feita por milton gomes";
+        text-decoration: overline; /*coloca uma linha em cima*/
+    }
     
+    main h1 {
+        text-shadow: none;
+        color: black;        
+    }
+
+img#phone {display: none;} /*nao aparece o item*/
+img#tablet {display: none;} /*aparece o item*/
+img#print {display: block;} /*nao aparece o item*/
+img#pc {display: none;} /*nao aparece o item*/
+img#tv {display: none;} /*nao aparece o item*/
+}
+
+/* tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-image: url('img/back-tablet.jpg');
+    }
+
+img#phone {display: none;} /*nao aparece o item*/
+img#tablet {display: block;} /*aparece o item*/
+img#print {display: none;} /*nao aparece o item*/
+img#pc {display: none;} /*nao aparece o item*/
+img#tv {display: none;} /*nao aparece o item*/
+}
+
+/* desktop */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background-image: url('img/back-pc.jpg');
+    }
+
+img#phone {display: none;} /*nao aparece o item*/
+img#tablet {display: none;} /*nao aparece o item*/
+img#print {display: none;} /*nao aparece o item*/
+img#pc {display: block;} /*aparece o item*/
+img#tv {display: none;} /*nao aparece o item*/
+}
+
+/* telas grandes */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url('img/back-tv.jpg');
+    }
+
+    main {
+        width: 700px;
+    }
+
+img#phone {display: none;} /*nao aparece o item*/
+img#tablet {display: none;} /*nao aparece o item*/
+img#print {display: none;} /*nao aparece o item*/
+img#pc {display: none;} /*nao aparece o item*/
+img#tv {display: block;} /*aparece o item*/
 }
