@@ -10,8 +10,9 @@
     <!-- fim do link do menu hamburguer -->
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Daredevil, by Brian Michael Bendis</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -64,6 +65,14 @@
 
     <script>
         // javascript para fazer o menu mostrar os itens
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (items.style.display == 'block') { /* == igual*/
                 items.style.display = 'none' /* = recebe*/

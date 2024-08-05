@@ -54,7 +54,7 @@ menu ul li a:hover {
 }
 
 main {
-    width: 90%;
+    width: 90vw;
     background-color: white;
     margin: auto; /*centraliza o main*/
     padding: 10px;
